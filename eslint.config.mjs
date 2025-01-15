@@ -13,6 +13,7 @@ export default antfu({
     // indent: 2, // 4, or 'tab'
     quotes: 'single', // single or 'double'
     semi: true, // 啟用分號
+    arrowParens: 'avoid',
   },
 
   // TypeScript and Vue are autodetected, you can also explicitly enable them:
@@ -48,6 +49,19 @@ export default antfu({
   },
   rules: {
     'vue/singleline-html-element-content-newline': 'off',
+    'style/arrow-parens': 'off',
+    '@typescript-eslint/arrow-parens': 'off',
+    'arrow-parens': 'off',
+    'unicorn/arrow-parens': ['error', 'as-needed'],
+    'antfu/if-newline': 'off',
+    'vue/html-self-closing': [
+      'error',
+      {
+        html: {
+          void: 'always',
+        },
+      },
+    ],
   },
   unocss: true,
 });
