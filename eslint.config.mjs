@@ -1,49 +1,49 @@
 // eslint.config.js
-import antfu from '@antfu/eslint-config';
+import antfu from '@antfu/eslint-config'
 
 export default antfu({
-  // Type of the project. 'lib' for libraries, the default is 'app'
+  // 項目類型。庫使用 'lib'，默認為 'app'
   //   type: 'lib',
 
-  // Enable stylistic formatting rules
+  // 啟用風格格式化規則
   // stylistic: true,
 
-  // Or customize the stylistic rules
+  // 自定義風格規則
   stylistic: {
-    // indent: 2, // 4, or 'tab'
-    quotes: 'single', // single or 'double'
+    // indent: 2, // 使用 4 或 'tab'
+    quotes: 'single', // 使用單引號或雙引號
     semi: true, // 啟用分號
     arrowParens: 'avoid',
   },
 
-  // TypeScript and Vue are autodetected, you can also explicitly enable them:
-  typescript: false,
+  // TypeScript 和 Vue 會自動檢測，也可以明確啟用：
+  typescript: true,
   vue: true,
 
-  // Disable jsonc and yaml support
+  // 禁用 jsonc 和 yaml 支持
   jsonc: false,
   yaml: false,
 
-  // `.eslintignore` is no longer supported in Flat config, use `ignores` instead
+  // 在平面配置中不再支持 `.eslintignore`，改用 `ignores`
   ignores: [
     '**/fixtures',
     // ...globs
   ],
   formatters: {
     /**
-     * Format CSS, LESS, SCSS files, also the `<style>` blocks in Vue
-     * By default uses Prettier
+     * 格式化 CSS、LESS、SCSS 文件，以及 Vue 中的 `<style>` 區塊
+     * 默認使用 Prettier
      */
     css: true,
     /**
-     * Format HTML files
-     * By default uses Prettier
+     * 格式化 HTML 文件
+     * 默認使用 Prettier
      */
     html: true,
     /**
-     * Format Markdown files
-     * Supports Prettier and dprint
-     * By default uses Prettier
+     * 格式化 Markdown 文件
+     * 支持 Prettier 和 dprint
+     * 默認使用 Prettier
      */
     markdown: 'prettier',
   },
@@ -64,4 +64,4 @@ export default antfu({
     ],
   },
   unocss: true,
-});
+})
