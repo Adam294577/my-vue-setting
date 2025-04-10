@@ -1,23 +1,37 @@
 {
+  // 編輯器字體大小
   "editor.fontSize": 16,
+  // JavaScript 函數括號前添加空格
   "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // JavaScript 控制塊大括號不換行
   "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  // JavaScript 函數大括號不換行
   "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  // TypeScript 函數括號前添加空格
   "typescript.format.insertSpaceBeforeFunctionParenthesis": true,
+  // TypeScript 控制塊大括號不換行
   "typescript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  // TypeScript 函數大括號不換行
   "typescript.format.placeOpenBraceOnNewLineForFunctions": false,
+  // 貼上時自動格式化
   "editor.formatOnPaste": true,
+  // 儲存時自動修復
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
+  // 自動換行
   "editor.wordWrap": "on",
+  // Vue 檔案使用 Prettier 格式化
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // 儲存時自動格式化
   "editor.formatOnSave": true,
+  // JavaScript 檔案使用 Prettier 格式化
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  // Emmet 相關設定
   "emmet.triggerExpansionOnTab": true,
   "emmet.showAbbreviationSuggestions": true,
   "emmet.showExpandedAbbreviation": "always",
@@ -25,20 +39,31 @@
     "vue-html": "html",
     "vue": "html"
   },
+  // 信任未知檔案
   "security.workspace.trust.untrustedFiles": "open",
+  // 切換焦點時自動儲存
   "files.autoSave": "onFocusChange",
+  // 預設格式化工具為 Prettier
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // Git 自動拉取
   "git.autofetch": true,
+  // Prettier 設定
   "prettier.printWidth": 100,
   "prettier.singleQuote": true,
   "prettier.resolveGlobalModules": true,
   "prettier.jsxSingleQuote": true,
+  // 刪除檔案時不確認
   "explorer.confirmDelete": false,
+  // 檔案衝突時覆寫磁碟上的檔案
   "files.saveConflictResolution": "overwriteFileOnDisk",
+  // 使用 vscode-icons 圖示主題
   "workbench.iconTheme": "vscode-icons",
   "workbench.settings.applyToAllProfiles": [],
+  // Tabnine 自動導入實驗功能
   "tabnine.experimentalAutoImports": true,
+  // 允許使用滑鼠滾輪縮放
   "editor.mouseWheelZoom": true,
+  // 檔案巢狀顯示設定
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.patterns": {
     "*.ts": "${capture}.js, ${capture}.typegen.ts",
@@ -50,5 +75,6 @@
     "*.mts": "${capture}.typegen.ts",
     "*.cts": "${capture}.typegen.ts"
   },
+  // 移動檔案時自動更新導入路徑
   "javascript.updateImportsOnFileMove.enabled": "always"
 }
